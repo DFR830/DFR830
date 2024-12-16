@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horari Setmanal- Institut Joaquim Mir</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #34495e;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .mytabla {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .mytabla thead {
+      background-color: #0077b6;
+      color: #ffffff;
+    }
+
+    .mytabla tbody {
+      background-color: #ecf0f1;
+    }
+
+    .mytabla th,
+    .mytabla td {
+      border: 1px solid #dfe4ea;
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
+      vertical-align: middle;
+      transition: background-color 0.3s ease;
+    }
+
+    .mytabla tbody tr td:first-child {
+      background-color: #bdc3c7;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .mytabla td:hover {
+      background-color: #d6eaf8;
+    }
+
+    .highlight-today {
+      background-color: #ffeaa7;
+      font-weight: bold;
+    }
+
+    .lengua {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    .clase {
+      font-size: 13px;
+      font-style: italic;
+      color: #7f8c8d;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    ul li a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #0056a6;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Horari Setmanal</h1>
+    <br>
+    <table class="mytabla">
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Dilluns</th>
+          <th>Dimarts</th>
+          <th>Dimecres</th>
+          <th>Dijous</th>
+          <th>Divendres</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15:00 - 16:00</td>
+          <td><span class="lengua">Lenguatge de Marques</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="lengua">Lenguatge de Marques</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Anglès</span><br><span class="clase">Aula A1</span></td>
+        </tr>
+        <tr>
+          <td>16:00 - 17:00</td>
+          <td><span class="lengua">Sistemes Operatius</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><span class="lengua">Lenguatge de Marques</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Anglès</span><br><span class="clase">Aula A1</span></td>
+        </tr>
+        <tr>
+          <td>17:00 - 18:00</td>
+          <td><span class="lengua">Sistemes Operatius</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+          <td><span class="lengua">Bases de Dades</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Sistemes Operatius</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+        </tr>
+        <tr>
+          <td>18:00 - 18:20</td>
+          <td colspan="5"><span class="lengua">Pati</span><br><span class="clase"></span></td>
+        </tr>
+        <tr>
+          <td>18:20 - 19:20</td>
+          <td><span class="lengua">Bases de Dades</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+        </tr>
+        <tr>
+          <td>19:20 - 20:20</td>
+          <td><span class="lengua">Bases de Dades</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Bases de Dades</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+          <td><span class="lengua">Xarxes</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>20:20 - 21:20</td>
+          <td>-</td>
+          <td><span class="lengua">Sistemes Operatius</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+          <td><span class="lengua">Tutoria</span><br><span class="clase">Aula A1</span></td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Mòduls i Moodle</h2>
+    <br>
+    <ul>
+      <li>
+        <strong>Lenguatge de Marques:</strong> Professor: Salva Jimenez.
+        <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=223" target="_blank">Lenguatge de Marques Moodle</a>
+      </li>
+      <li>
+        <strong>Sistemes Operatius:</strong> Professor: Carles Aguilar.
+        <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=402" target="_blank">Sistemes Operatius Moodle</a>
+      </li>
+      <li>
+        <strong>Xarxes:</strong> Professor: Juan Aguilera.
+        <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=380" target="_blank">Xarxes Moodle</a>
+      </li>
+      <li>
+        <strong>Bases de Dades:</strong> Professor: Dani Roman.
+        <a href="https://moodle.insjoaquimmir.cat/course/view.php?id=232" target="_blank">Bases de Dades Moodle</a>
+      </li>
+      <li>
+        <strong>Anglès:</strong> Professora: Pilar Herrero.
+      </li>
+      <li>
+        <strong>Tutoria:</strong> Professor: Juan Aguilera.
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria amb Àudio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00b4d8;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #00b4d8;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .galeria div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 200px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria div:hover {
+            transform: scale(1.05);
+        }
+
+        .galeria img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .float-container {
+            margin-top: 30px;
+            overflow: hidden;
+            padding: 10px;
+            background-color: #eaf2f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .float-container img {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            border: 2px solid #0077b6;
+        }
+
+        .float-container p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .audio-container {
+            margin-top: 30px;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Galeria
+    </header>
+
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="horari.html">Horari</a>
+        <a href="subpagina.html">Sobre Mi</a>
+        <a href="galeria.html">Galeria</a>
+    </nav>
+
+    <main>
+        <div class="galeria">
+            <div>
+                <img src="html4.png" alt="Imatge 1">
+            </div>
+            <div>
+                <img src="html1.jpg" alt="Imatge 2">
+            </div>
+            <div>
+                <img src="html2.jpg" alt="Imatge 3">
+            </div>
+            <div>
+                <img src="html3.webp" alt="Imatge 4">
+            </div>
+        </div>
+
+        <div class="float-container">
+            <img src="html1.jpg" alt="Imatge Float">
+            <p>
+                Aquest és un exemple d’ús del float. L’imatge està flotant a l’esquerra, mentre que aquest text
+                l’envolta. Pots afegir més text aquí per veure com s’adapta al costat de la imatge.
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <iframe width="300" height="130" src="https://www.youtube.com/embed/C91PNFPer_s?si=iYLm3EBFMCMh2j5L"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="audio-container">
+            <h2>Nota de voz </h2>
+            <audio controls>
+                <source src="audio.m4a">
+            </audio>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

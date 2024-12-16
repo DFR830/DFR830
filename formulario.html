@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            color: white;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-container a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0c0c0c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="horari.html">Horari</a>
+            <a href="subpagina.html">Sobre mi</a>
+            <a href="index.html">Pàgina Principal</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Rellena el formulario</h1>
+        <form action="https://alumnat.cat/form" method="POST">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="cognoms">Cognoms:</label>
+            <input type="text" id="cognoms" name="cognoms" required>
+
+            <label for="edat">Edat:</label>
+            <input type="number" id="edat" name="edat" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="color">Color preferit:</label>
+            <input type="color" id="color" name="color">
+
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="estudis">Estudis:</label>
+            <select id="estudis" name="estudis">
+                <option value="batxillerat">Batxillerat</option>
+                <option value="grau-mitja">GM</option>
+                <option value="grau-superior">GS</option>
+            </select>
+
+            <fieldset>
+                <legend>Sexe:</legend>
+                <label>
+                    <input type="radio" name="sexe" value="home" required> Home
+                </label>
+                <label>
+                    <input type="radio" name="sexe" value="dona"> Dona
+                </label>
+                <label>
+                    <input type="radio" name="sexe" value="elee"> Elle
+                </label>
+            </fieldset>
+
+            <label for="explicacio">Explicació:</label>
+            <textarea id="explicacio" name="explicacio" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox" name="privacitat" required> Accepto la política de privacitat
+            </label>
+
+            <label for="foto">Fotografia:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
